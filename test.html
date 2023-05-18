@@ -1,5 +1,5 @@
 <!--- style tag only effects placement within the page --->
-<div style="position: absolute; left: 0px; top: 0px; border: solid 0px #555; width:1800px; height:1385px;">
+<div id="wrap" style="position: absolute; left: 0px; top: 0px; border: solid 0px #555; width:1800px; height:1385px;">
 <!--- margin-top: -88px cuts off header --->
 <div style="overflow: hidden; margin-top: -88px; margin-left: -25px;">
 </div>
@@ -9,3 +9,28 @@ scrolling="no"
 style="overflow:hidden; height: 490px; border: 0px none; width: 800px; margin-top: -20px; margin-left: -1px; ">
 </iframe>
 </div>
+
+<style>
+  #wrap {
+  width: 750px;
+  height: 1500px;
+  padding: 0;
+  overflow: hidden;
+}
+
+#scaled-frame {
+  width: 1000px;
+  height: 2000px;
+  border: 0px;
+}
+
+#scaled-frame {
+  zoom: 0.75;
+  -moz-transform: scale(0.75);
+  -moz-transform-origin: 0 0;
+  -o-transform: scale(0.75);
+  -o-transform-origin: 0 0;
+  -webkit-transform: scale(0.75);
+  -webkit-transform-origin: 0 0;
+}
+</style>
